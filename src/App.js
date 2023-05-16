@@ -14,7 +14,7 @@ function App() {
 
   const iterador = 5000000
   console.time('memo')
-  const memoized = useMemo(() => {
+  useMemo(() => {
     let total = 0
     for (let i = 0; i < iterador; i ++){
       total = total * iterador
